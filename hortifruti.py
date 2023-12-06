@@ -4,6 +4,7 @@ def consulta_cad(horti, produto):
     while lin <= len(horti) and cadastrado != True:
         if produto == horti[-lin][0]:
             cadastrado = True
+            print(horti[-lin][1])
         else:
             lin += 1
     return(cadastrado)
